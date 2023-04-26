@@ -23,6 +23,7 @@ namespace Portfolio_Of_Evidence_Part_1
             int numberOfIngredients = Convert.ToInt32(Console.ReadLine());
             while (numberOfIngredients > 0)
             {
+                
                 Console.WriteLine("Please enter the name of the ingredient?");
                 String ingredient = Console.ReadLine();
                 Ingredient.Add(ingredient);
@@ -33,7 +34,13 @@ namespace Portfolio_Of_Evidence_Part_1
                 String unit = Console.ReadLine();
                 unitOfMeasurement.Add(unit);
                 numberOfIngredients--;
+                
             }
+            for (int i = 0; i < Ingredient.Count; i++)
+                Console.Write(Ingredient[i] + "\t" + Quantity[i] + "\t" + unitOfMeasurement[i] + "\n");
+
+
+
             Console.ReadKey();
         }
     }
