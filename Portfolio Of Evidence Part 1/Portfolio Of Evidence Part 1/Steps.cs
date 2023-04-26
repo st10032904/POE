@@ -38,7 +38,7 @@ namespace Portfolio_Of_Evidence_Part_1
             String output = "";
             for (int i = 0; i < recipeSteps.Count; i++)
             {
-                output = output + recipeSteps[i].ToString;
+                output = output + recipeSteps[i];
             }
             return output;
 
