@@ -19,8 +19,8 @@ namespace Portfolio_Of_Evidence_Part_1
             ArrayList Quantity = new ArrayList();
             ArrayList unitOfMeasurement = new ArrayList();
 
-
-            int numberOfIngredients = Convert.ToInt32(Console.ReadLine("How many ingredients are there going to be in this recipe?"));
+            Console.WriteLine("How many ingredients are going to be in this recipe?");
+            int numberOfIngredients = Convert.ToInt32(Console.ReadLine());
             while (numberOfIngredients > 0)
             {
                 Console.WriteLine("Please enter the name of the ingredient?");
