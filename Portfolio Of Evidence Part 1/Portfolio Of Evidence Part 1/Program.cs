@@ -18,6 +18,7 @@ namespace Portfolio_Of_Evidence_Part_1
             ArrayList Ingredient = new ArrayList();
             ArrayList Quantity = new ArrayList();
             ArrayList unitOfMeasurement = new ArrayList();
+            ArrayList Steps = new ArrayList();  
 
             Console.WriteLine("How many ingredients are going to be in this recipe?");
             int numberOfIngredients = Convert.ToInt32(Console.ReadLine());
@@ -36,10 +37,25 @@ namespace Portfolio_Of_Evidence_Part_1
                 numberOfIngredients--;
                 
             }
+            Console.WriteLine("How many steps are going to be in this recipe?");
+            int numberOfSteps = Convert.ToInt32(Console.ReadLine());
+            while (numberOfSteps > 0) 
+            {
+
+                
+                Console.WriteLine("What is the step");
+                Steps.Add(Console.ReadLine());
+                numberOfSteps--;
+            
+            }
+
+            Console.WriteLine("Ingredient \t Quantity \t Unit");
             for (int i = 0; i < Ingredient.Count; i++)
                 Console.Write(Ingredient[i] + "\t" + Quantity[i] + "\t" + unitOfMeasurement[i] + "\n");
 
-
+            Console.WriteLine("Steps \n");
+            for (int i = 0; i < Steps.Count; i++)
+                Console.Write(Steps[i] + "\n");
 
             Console.ReadKey();
         }
