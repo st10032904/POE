@@ -20,15 +20,28 @@ namespace Portfolio_Of_Evidence_Part_1
             List<Double> ingredientQuantities = new List<Double>();
             List<String> ingredientUnits = new List<String>();
 
+            // Instantiating List<> variables for the steps of the recipe
             int numberOfSteps = 0;
             List<String> Steps = new List<String>();
 
+            // Temp variable initialised to help combat parsing
             double temp = 0;
 
+            // List<> variable instantiated to help with the scaling feauture
             List<Double> tempQuantity = new List<Double>();
 
             Console.WriteLine("Welcome!, Please select one of the options that follow.");
+            
+            // Changing console foreground color to magenta
+            Console.ForegroundColor = ConsoleColor.Blue;
 
+            // Changing console background color to blue
+            Console.BackgroundColor = ConsoleColor.White;
+
+            // Clear console color (This typically aids in creating the effect of having the entire console a specific color
+            Console.Clear();
+
+            // While loop to indefinetely run the program until the user chooses to exit
             while (true)
             {
                 // Display menu
@@ -44,6 +57,7 @@ namespace Portfolio_Of_Evidence_Part_1
 
                 switch(option) {
 
+                    // Add ingredients to recipe & add steps to recipe
                     case "1":
                         Console.WriteLine("How many ingredients are to be added?");
                         numberOfIngredients = Convert.ToInt32(Console.ReadLine());
@@ -69,18 +83,24 @@ namespace Portfolio_Of_Evidence_Part_1
                         }
                         Console.WriteLine("Details saved successfully");
                         break;
+
+                        // Display recipe
                     case "2":
-                        Console.WriteLine("Name \t Quantity \t Unit");
+                        Console.WriteLine("------------------------------\n" +
+                            "Name \t Quantity \t Unit\n");
                         for (int i = 0; i < ingredientNames.Count; i++)
                         {
-                            Console.WriteLine(ingredientNames[i] + " \t " + ingredientQuantities[i] + " \t " + ingredientUnits[i] + "\n");
+                            Console.WriteLine(ingredientNames[i] + " \t " + ingredientQuantities[i] + " \t\t " + ingredientUnits[i] + "\n");
                         }
-                        Console.WriteLine("Ingredient Steps");
+                        Console.WriteLine("------------------------------" +
+                            "\nIngredient Steps");
                         for (int i = 0; i < Steps.Count; i++)
                         {
                             Console.WriteLine(i +": \t" + Steps[i] + "\n");
                         }
                         break;
+                        
+                        // Scaling recipe
                         case "3":
                         Console.WriteLine("What is the scale factor for this recipe? Example: (0.5, 1, 1.5)");
                         double scale = Convert.ToDouble(Console.ReadLine());
@@ -91,10 +111,17 @@ namespace Portfolio_Of_Evidence_Part_1
                         Console.WriteLine("Quantities successfully scaled!");
                         break;
 
+                        // Resetting values of recipe to default (Currently not working)
                     case "4":
-                        
+                        for (int i = 0; i < ingredientQuantities.Count(); i++)
+                        {
+                            tempQuantity = ingredientQuantities;
+
+                        }
+                        Console.WriteLine("Recipe scaling reset to original values!");
                         break;
 
+                        // Clear all values of the recipe
                     case "5":
                         ingredientNames.Clear();
                         ingredientQuantities.Clear();
@@ -103,6 +130,8 @@ namespace Portfolio_Of_Evidence_Part_1
                         numberOfIngredients = 0;
                         numberOfSteps = 0;
                         break;
+
+                        // Exit application
                     case "6":
                         System.Environment.Exit(0);
                         break;
@@ -114,7 +143,7 @@ namespace Portfolio_Of_Evidence_Part_1
 
 
 
-                /*
+               /*
                             Instantiating ArrayList objects
                             ArrayList Ingredient = new ArrayList();
                             ArrayList Quantity = new ArrayList();
