@@ -33,8 +33,8 @@ namespace Portfolio_Of_Evidence_Part_1
                 Console.WriteLine("2. Display recipe");
                 Console.WriteLine("3. Scale recipe");
                 Console.WriteLine("4. Reset recipe");
-                Console.WriteLine("5. Clear all data");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("5. Exit");
+                
 
                 String option = Console.ReadLine();
 
@@ -86,6 +86,9 @@ namespace Portfolio_Of_Evidence_Part_1
                         Steps.Clear();
                         numberOfIngredients = 0;
                         numberOfSteps = 0;
+                        break;
+                    case "5":
+                        System.Environment.Exit(0);
                         break;
 
                 }
