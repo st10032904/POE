@@ -17,11 +17,15 @@ namespace Portfolio_Of_Evidence_Part_1
             // Instantiating List<> variables for the recipe ingredients
             int numberOfIngredients = 0;
             List<String> ingredientNames = new List<String>();
-            List<String> ingredientQuantities = new List<String>();
+            List<Double> ingredientQuantities = new List<Double>();
             List<String> ingredientUnits = new List<String>();
 
             int numberOfSteps = 0;
             List<String> Steps = new List<String>();
+
+            double temp = 0;
+
+            List<Double> tempQuantity = new List<Double>();
 
             Console.WriteLine("Welcome!, Please select one of the options that follow.");
 
@@ -33,8 +37,8 @@ namespace Portfolio_Of_Evidence_Part_1
                 Console.WriteLine("2. Display recipe");
                 Console.WriteLine("3. Scale recipe");
                 Console.WriteLine("4. Reset recipe");
-                Console.WriteLine("5. Exit");
-                
+                Console.WriteLine("5. Clear recipe");
+                Console.WriteLine("6. Exit");
 
                 String option = Console.ReadLine();
 
@@ -48,7 +52,9 @@ namespace Portfolio_Of_Evidence_Part_1
                             Console.WriteLine("Please enter the ingredient name");
                             ingredientNames.Add(Console.ReadLine());
                             Console.WriteLine("Please enter the ingredient quantity");
-                            ingredientQuantities.Add(Console.ReadLine());
+                            
+                            temp = double.Parse((Console.ReadLine()));
+                            ingredientQuantities.Add(temp);
                             Console.WriteLine("Please enter the ingredient unit");
                             ingredientUnits.Add(Console.ReadLine());
                             numberOfIngredients--;
@@ -76,10 +82,20 @@ namespace Portfolio_Of_Evidence_Part_1
                         }
                         break;
                         case "3":
-
+                        Console.WriteLine("What is the scale factor for this recipe? Example: (0.5, 1, 1.5)");
+                        double scale = Convert.ToDouble(Console.ReadLine());
+                        for (int i = 0; i < ingredientQuantities.Count(); i++) { 
+                            tempQuantity = ingredientQuantities;
+                        tempQuantity[i] = tempQuantity[i] * scale;
+                        }
+                        Console.WriteLine("Quantities successfully scaled!");
                         break;
 
                     case "4":
+                        
+                        break;
+
+                    case "5":
                         ingredientNames.Clear();
                         ingredientQuantities.Clear();
                         ingredientUnits.Clear();
@@ -87,7 +103,7 @@ namespace Portfolio_Of_Evidence_Part_1
                         numberOfIngredients = 0;
                         numberOfSteps = 0;
                         break;
-                    case "5":
+                    case "6":
                         System.Environment.Exit(0);
                         break;
 
