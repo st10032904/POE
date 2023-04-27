@@ -77,6 +77,17 @@ namespace Portfolio_Of_Evidence_Part_1
                         break;
                         case "3":
 
+                        break;
+
+                    case "4":
+                        ingredientNames.Clear();
+                        ingredientQuantities.Clear();
+                        ingredientUnits.Clear();
+                        Steps.Clear();
+                        numberOfIngredients = 0;
+                        numberOfSteps = 0;
+                        break;
+
                 }
 
 
