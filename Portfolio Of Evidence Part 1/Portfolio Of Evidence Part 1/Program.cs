@@ -95,8 +95,14 @@ namespace Portfolio_Of_Evidence_Part_1
                             numberOfIngredients--;
                         }
                         Console.WriteLine("How many steps are to be added?");
+                        if (Console.ReadLine().Length < 0)
+                        {
+                            Console.WriteLine("Please enter an ingredient unit... Returning to main menu");
+                        }
+                        else { 
                         numberOfSteps = Convert.ToInt32(Console.ReadLine());
-                        while(numberOfSteps > 0)
+                        }
+                        while (numberOfSteps > 0)
                         {
                             Console.WriteLine("Please enter a step");
                             Steps.Add(Console.ReadLine());
