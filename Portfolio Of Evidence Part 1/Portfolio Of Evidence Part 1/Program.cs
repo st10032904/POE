@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace Portfolio_Of_Evidence_Part_1
     {
         static void Main(string[] args)
         {
+            
             // Instantiating List<> variables for the recipe ingredients
             int numberOfIngredients = 0;
             List<String> ingredientNames = new List<String>();
@@ -64,13 +66,32 @@ namespace Portfolio_Of_Evidence_Part_1
                         while(numberOfIngredients > 0)
                         {
                             Console.WriteLine("Please enter the ingredient name");
+                            if(Console.ReadLine().Length < 0)
+                            {
+                                Console.WriteLine("Please enter an ingredient name... Returning to main menu");
+                            }
+                            else { 
                             ingredientNames.Add(Console.ReadLine());
+                            }
                             Console.WriteLine("Please enter the ingredient quantity");
                             
+                            if (Console.ReadLine().Length < 0) { 
+                                Console.WriteLine("Please enter an ingredient quantity... Returning to main menu");
+                            }
+                            else { 
                             temp = double.Parse((Console.ReadLine()));
+                            
                             ingredientQuantities.Add(temp);
+                            }
+
                             Console.WriteLine("Please enter the ingredient unit");
+                            if (Console.ReadLine().Length < 0)
+                            {
+                                Console.WriteLine("Please enter an ingredient unit... Returning to main menu");
+                            }
+                            else { 
                             ingredientUnits.Add(Console.ReadLine());
+                            }
                             numberOfIngredients--;
                         }
                         Console.WriteLine("How many steps are to be added?");
