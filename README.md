@@ -14,3 +14,9 @@ Once the above are completed, the program may be installed. To install the progr
 To do this, simply 'git clone https://github.com/st10032904/POE'
 
 Once installed, simply build and run the project through Visual Studio. 
+
+## To Do
+
+- Add Number Format Exceptions
+- Utilize Classes for recipe objects
+- Fix Scale reset feature
