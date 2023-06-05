@@ -1,8 +1,0 @@
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\bin\Debug\Portfolio Of Evidence.exe.config
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\bin\Debug\Portfolio Of Evidence.exe
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\bin\Debug\Portfolio Of Evidence.pdb
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\obj\Debug\Portfolio Of Evidence.csproj.AssemblyReference.cache
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\obj\Debug\Portfolio Of Evidence.csproj.SuggestedBindingRedirects.cache
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\obj\Debug\Portfolio Of Evidence.csproj.CoreCompileInputs.cache
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\obj\Debug\Portfolio Of Evidence.exe
-C:\Users\Ali Khazem\OneDrive\University\Year 2\Semester 1\Programming\POE\Portfolio Of Evidence\Portfolio Of Evidence Part 1\obj\Debug\Portfolio Of Evidence.pdb
