@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Porfolio_Of_Evidence
 {
-    internal class Program
+    internal class internalApplication
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
